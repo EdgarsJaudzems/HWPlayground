@@ -78,6 +78,5 @@ while true {
         print("Bug will spend \(numberOfDays) days to reach top of the post")
         break
     }
-   
 }
 
