@@ -65,18 +65,22 @@ print("Number 5 will be after \(counter) shuffles")
  A bug is climbing to a 10-meter electric post. During the day, bug can climb two meters, during the night she slides down to 1 meter. Determine with the help of the cycle how many days bug will climb on the top of the post. Think about which loop to use in which situation. print("bug will spend \(numberOfDays)) to reach top of the post")
  */
 
-let electricPost = 10
+let electricPostHeight = 10
 let daySpeed = 2
 let nightSpeed = -1
 var bugClimb = 0
 var numberOfDays = 0
 
 while true {
-   bugClimb += daySpeed + nightSpeed
+    bugClimb += daySpeed
     numberOfDays += 1
-    if bugClimb == electricPost {
+    
+    if bugClimb == electricPostHeight {
         print("Bug will spend \(numberOfDays) days to reach top of the post")
         break
     }
+    
+    bugClimb += nightSpeed
 }
+
 
