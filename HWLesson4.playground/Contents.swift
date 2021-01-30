@@ -16,13 +16,14 @@ import UIKit
 
 var myTeam = "Boys"
 var resultsOfGame = [
-    "Dinamo"    : "0 : 2",
-    "Jokerit"   : "3 : 1",
-    "CSKA"      : "0 : 3"
+    "Dinamo"    : ["0 : 2" , "1 : 3"],
+    "Jokerit"   : ["3 : 1" , "1 : 3"],
+    "CSKA"      : ["0 : 3" , "1 : 3"]
 ]
 
 for (team, score) in resultsOfGame {
-    print("\(myTeam) against \(team) scored \(score)")
+    print("\(myTeam) against \(team) scored \(score[0])")
+    print("\(myTeam) against \(team) scored \(score[1])")
 }
 
 /*
